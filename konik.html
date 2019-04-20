@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/style.css">
+<head>
+<title>Konik na Sukces!</title>
+<link rel="shortcut icon" href="https://promocja.ukw.edu.pl/download/14977/logo-pol.jpg">
+</head>
+<body>
+
+<!-- Navigation -->
+<div class="topnav" id="myTopnav">
+  <a href="index.html">HOME</a>
+   <div class="dropdown">
+    <button class="dropbtn">PLATFORMA
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="rpg.html">RPG</a>
+     <a href="larp.html">Larpy</a>
+      <a href="planszowe.html">Gry planszowe</a>
+	  <a href="miejskie.html">Gry miejskie i ARG</a>
+	  <a href="karcianki.html">Gry karciane</a>
+	  <a href="paragrafowe.html">Gry paragrafowe</a>
+    </div>
+  </div> 
+   <div class="dropdown">
+    <button class="dropbtn">KONWENCJA
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="wojenne.html">Wojenne</a>
+      <a href="przygodowe.html">Przygodowe</a>
+      <a href="ekonomiczne.html">Ekonomiczne</a>
+	  <a href="edukacyjne.html">Edukacyjne</a>
+	  <a href="familijne.html">Familijne</a>
+	    <a href="dzieci.html" >Dla dzieci</a>
+	  <a href="thriller.html">Thriller</a>
+    </div>
+  </div> 
+  <div class="dropdown">
+    <button class="dropbtn">TYP ROZGRYWKI
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+       <a href="fps.html">FPS</a>
+	   <a href="platformowki.html" class="active">Platformówki</a>
+	   <a href="imprezowe.html">Imprezowe</a>
+    </div>
+  </div> 
+  <a href="tworcy.html">TWÓRCY GIER</a>
+    <a href="faq.html">FAQ</a>
+    <a href="en/index.html"><img src="images/gb.png" width="30px" alt="angielska_wersja">  EN</a>
+<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+<section>
+  <img class="mySlides" src="images/logo.png"
+  style="width:100%">
+</section>
+<br><br>
+
+
+
+<section class="games" style="max-width:1300px" >
+
+  
+   
+<h1> Konik na Sukces! </h1>
+
+<br>  <h3>
+    <b>Nazwa: </b> Konik na sukces! <br>
+    <b>Wiek:</b>  6-16 <br>
+    <b>Liczba graczy:</b> 14 
+   
+    <b>Gatunek</b>  edukacyjne, szkoleniowe  <br> 
+    <b>Autorzy:</b> Paulina Gęsiarz, Wojciech Nikorowicz, Aneta <br> Palczewska, 
+     Małgorzata Rupińska, Dawid Skoczylas  <br> </h3>
+   
+     <hr>
+   
+     
+
+
+
+</section>
+
+<div class="col-right">
+<h2>Tagi</h2>
+<p>
+<a href="action.html">action</a> <a href="anime.html">anime</a>
+<a href="chamber.html">chamber</a> <a href="dark.html">dark</a>
+<a href="dzieci.html">dla dzieci</a><br><a href="edukacyjne.html">edukacyjne</a>
+<a href="familijne.html">familijne</a> <a href="fantasy.html">fantasy</a>
+<a href="gore.html">gore</a><br><a href="karcianki.html">karciane</a>
+<a href="komputerowe.html">komputerowe</a> <a href="kooperacyjne.html">kooperacyjne</a><br>
+<a href="larp.html">larp</a> <a href="logiczne.html">logiczne</a> 
+<a href="paragrafowe.html">paragrafowe</a> <a href="parodia.html">parodia</a><br>
+<a href="planszowe.html">planszowe</a> <a href="platformowki.html">platformowe</a><br>
+<a href="przygodowe.html">przygodowe</a> <a href="rpg.html">rpg</a> 
+<a href="szkoleniowe.html">szkoleniowe</a><br><a href="thriller.html">thriller</a>
+<a href="wyscigowe.html">wyścigowe</a> <a href="zrecznosciowe.html">zręcznościowe</a>
+</p>
+</div>
+
+<!-- Footer -->
+<footer >
+  <a href="#"><i class="fa fa-facebook-official"></i></a>
+ 
+  <p >
+  Webdesign, humanistyka drugiej generacji 2019 © Uniwersytet Kazimierza Wielkiego
+  </p>
+</footer>
+
+<script>
+// Automatic Slideshow - change image every 3 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 3000);
+}
+</script>
+
+</body>
+</html>
+
+
